@@ -162,14 +162,20 @@ document.querySelector('.modal_form').addEventListener('submit', function (e) {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const phoneInput = document.getElementById('tel');
 
-  // Маска для телефонного номеру з початком +420 або +48
-  const phoneMask = new Inputmask([
-      '+4999999999999',  // Маска для +420
-  ]);
-  
-  phoneMask.mask(phoneInput);  // Підключення маски до поля вводу
-});
+  document.addEventListener('DOMContentLoaded', function() {
+    const phoneInput = document.getElementById('tel');
+
+    // Маска для телефонного номеру з початком +420
+    const phoneMask = new Inputmask({
+      mask: '+4999999999999', // Маска для номера
+      placeholder: '',        // Прибираємо підкреслення
+      showMaskOnHover: false, // Не показувати маску при наведенні
+      showMaskOnFocus: true   // Показувати маску лише при фокусі
+    });
+    
+    phoneMask.mask(phoneInput); // Підключення маски до поля вводу
+  });
+
+
 

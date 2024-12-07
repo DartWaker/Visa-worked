@@ -1105,3 +1105,15 @@
   align-items: center;
 }
 
+.doc-title-click{
+  cursor: pointer;
+  border-bottom: 2px solid white;
+    &:hover{
+      color: #f9b21e;
+      border-bottom: 2px solid #f9b21e;
+    }
+}
+
+.content-pad{
+  padding: 10px 0 0 0;
+}

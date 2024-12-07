@@ -407,8 +407,8 @@ html {
 }
 @media (max-width: 705px) {
   .content__doc-item {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 11px;
+    line-height: 11px;
   }
 }
 
@@ -1823,4 +1823,17 @@ html {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.doc-title-click {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+.doc-title-click:hover {
+  color: #f9b21e;
+  border-bottom: 2px solid #f9b21e;
+}
+
+.content-pad {
+  padding: 10px 0 0 0;
 }/*# sourceMappingURL=style.css.map */
