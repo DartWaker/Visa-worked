@@ -1800,10 +1800,10 @@ html {
 }
 
 .placeholder {
-  width: 420px;
-  margin: -20px;
-  height: 120px;
-  padding: 30px 20px 20px 30px;
+  width: 450px;
+  margin: -30px;
+  height: 140px;
+  padding: 40px 20px 20px 40px;
   overflow: hidden;
   font-size: 15px;
   line-height: 15px;
